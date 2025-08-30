@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>地點導航</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="overlay">
+    <h1>🚗 我的專屬地點導航</h1>
+    <p>快速搜尋、立即導航，讓出行更方便</p>
+  </div>
+</header>
+
+<main>
+  <div class="main-container">
+    <!-- 左側側欄 -->
+    <aside class="sidebar">
+      <h3>地點分組</h3>
+      <ul id="categoryList">
+        <li data-category="全部">全部</li>
+        <li data-category="停車場">停車場</li>
+        <li data-category="公司相關">公司相關</li>
+        <li data-category="住宿">住宿</li>
+        <li data-category="餐飲">餐飲</li>
+      </ul>
+    </aside>
+
+    <!-- 中間主內容 -->
+    <section class="content">
+      <!-- 搜尋區 -->
+      <div class="search-box">
+        <h2>搜尋地點</h2>
+        <div class="search-wrapper">
+          <input type="text" id="location" placeholder="輸入地點名稱">
+          <span id="searchIcon">🔍</span>
+        </div>
+        <ul id="suggestions"></ul>
+      </div>
+
+      <!-- 快速導航卡片 -->
+      <section class="section quick-nav">
+        <h2>常用地點</h2>
+        <div class="card-grid">
+          <div class="feature-card" data-name="文英宿舍" data-category="住宿,全部">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmRGdZzT7N1kv3qd4_FcqjD3SIQ8hXQoBe0l78FkkqVcHySrYzID887C6pgDW1IbZISFg&usqp=CAU" alt="文英">
+            <p>文英宿舍</p>
+          </div>
+          <div class="feature-card" data-name="上班停車" data-category="停車場,全部">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/fotjjenojet-1635314120.jpg?crop=0.498xw:0.993xh;0,0&resize=640:*" alt="停車場">
+            <p>上班停車</p>
+          </div>
+          <div class="feature-card" data-name="下班停車" data-category="停車場,全部">
+            <img src="https://www.bmwhk.com/content/dam/bmw/common/all-models/m-series/x6m/2019/inspire/bmw-x6-m-inspire-next-page-teaser.jpg" alt="停車場">
+            <p>下班停車</p>
+          </div>
+          <div class="feature-card" data-name="五權立體停車場" data-category="停車場,全部">
+            <img src="https://www.mansory.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/661d6e0d2e84ef511db18f17/6818bd66e807a051a942382a_Audi%2520RS7-Exterior_-_Main_image-001.webp" alt="停車場">
+            <p>五權立體停車場</p>
+          </div>
+          <div class="feature-card" data-name="公司" data-category="公司相關,全部">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/2025-mercedes-amg-g63-180-6890d45ec2f03.jpg?crop=0.735xw:0.551xh;0.0911xw,0.376xh&resize=640:*" alt="公司">
+            <p>公司</p>
+          </div>
+          <div class="feature-card" data-name="家" data-category="住宿,全部">
+            <img src="https://img.supermoto8.com/images/article/f4fa4085782163a406053cd6769c5fd22.jpg" alt="回家">
+            <p>家</p>
+          </div>
+          <div class="feature-card" data-name="逢甲常停的地方" data-category="停車場,全部">
+            <img src="https://www.topgear.com/sites/default/files/cars-car/image/2024/10/1-Lamborghini-Urus-SE-review-2024.jpg?w=1280&h=720" alt="停車場">
+            <p>逢甲常停的地方</p>
+          </div>
+          <div class="feature-card" data-name="大慶 30停車場" data-category="停車場,全部">
+            <img src="https://www.europeanprestige.co.uk/blobs/stock/622/images/9fcf5566-e1bb-4d12-80e3-3614d6f690cf/hi4a2745.jpg?width=2000&height=1333" alt="停車場">
+            <p>大慶 30停車場</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+</main>
+
+<!-- 底部社群 -->
+<footer>
+  <div class="social">
+    <a href="https://www.facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB"></a>
+    <a href="https://www.instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="IG"></a>
+    <a href="https://discord.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord"></a>
+  </div>
+  <p>©2025 MADE BY ALBERTCHEN</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
