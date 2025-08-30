@@ -164,14 +164,45 @@ footer .social img:hover {
   filter: brightness(1.5);
 }
 
-/* 手機響應 */
+/* 手機版 (寬度 <= 768px) */
 @media (max-width: 768px) {
-  .main-container { flex-direction: column; }
-  .sidebar { width: 100%; margin-bottom: 1rem; }
+  .main-container {
+    flex-direction: column; /* 側欄與主內容上下排列 */
+  }
+
+  .sidebar {
+    width: 100%;
+    margin: 0 0 1rem 0; /* 上下間距 */
+    border-radius: 0.5rem;
+  }
+
+  .content {
+    margin: 0 auto;
+    width: 95%; /* 適應手機寬度 */
+    padding: 0.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* 卡片適應手機版 */
+    gap: 0.8rem;
+  }
+
+  .search-wrapper input {
+    font-size: 1rem; /* 適合手機打字 */
+  }
+
+  /* 搜尋建議也要適應手機寬度 */
+  ul#suggestions {
+    max-height: 150px;
+  }
+
+  /* 側欄分類點選按鈕大小調整 */
+  .sidebar li {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+  }
 }
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
+
 
 /* 卡片 hover 發光 */
 .feature-card:hover {
