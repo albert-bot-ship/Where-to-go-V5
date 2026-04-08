@@ -6,7 +6,7 @@ const placeMap = {
   "大遠百停車場":"https://maps.app.goo.gl/4PWzGXKi4DA3868o7",
   "上班停車": "https://maps.app.goo.gl/UmGX9XsFhTDaNfx57",
   "下班停車": "https://maps.app.goo.gl/Mh1zR6YkECsAWPzY7",
-  "文英宿舍": "https://maps.app.goo.gl/RhPCZtmqa8vcYj5N9",
+  "逢甲租屋處": "https://maps.app.goo.gl/LXSpXpsSY7DVBDh37",
   "旱溪夜市停車":"https://maps.app.goo.gl/mCbovzJzY62h9aRy7",
   "平祿壽司-松竹店":"https://maps.app.goo.gl/QUKnW17M1kXp211G6",
   "老婆上班的地方":"https://maps.app.goo.gl/81WdBkR1TA23PGRs5",
