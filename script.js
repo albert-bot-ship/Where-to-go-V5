@@ -14,7 +14,6 @@ const placeMap = {
   "阿蘭碗粿":"https://maps.app.goo.gl/kEim8aHX6ZdYj4zR7",
   "豐原太平洋百貨":"https://maps.app.goo.gl/PgCybHoKBzEFeZzo6",
   "公司":"https://maps.app.goo.gl/ABCDEFG1234567",
-  "家":"https://maps.app.goo.gl/H1234567XYZ"
   "石頭 鹽酥雞":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
 };
 
