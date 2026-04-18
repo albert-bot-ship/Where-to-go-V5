@@ -18,6 +18,7 @@ const placeMap = {
   "旱溪夜市":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
   "家樂福 豐原":"https://maps.app.goo.gl/BEaqNKyjCzyEFr5C8",
   "豐原大車河站3":"https://maps.app.goo.gl/Z1n5XBa3WkboqopZA",
+  "蔚藍海T2咖啡車":"https://maps.app.goo.gl/YiySbYtW6eAhRdhE6",
 };
 
 const input = document.getElementById("location");
