@@ -304,11 +304,26 @@ footer .social img:hover {
 
 
 /* 卡片 hover 發光 */
+.feature-card {
+  transition: all 0.25s ease;
+  position: relative;
+}
+
 .feature-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 42, 0, 0.8);
+  transform: scale(1.03) translateY(-4px);
   border-color: #ff5100;
-  filter: brightness(1.15);
+  box-shadow: 0 10px 25px rgba(255, 81, 0, 0.25);
+}
+
+/* 柔光外層 */
+.feature-card:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 25px rgba(255, 81, 0, 0.4);
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 /* 側欄分類 active */
@@ -355,19 +370,113 @@ footer .social img:hover {
 }
 
 /* 字卡呼吸燈效果 */
-@keyframes pulseGlowCard {
-  0% {
-    box-shadow: 0 0 6px rgba(255, 80, 0, 0.6);
-    transform: scale(1);
-  }
-  50% {
-    box-shadow: 0 0 18px rgba(255, 80, 0, 1);
-    transform: scale(1.05);
-  }
-  100% {
-    box-shadow: 0 0 6px rgba(255, 80, 0, 0.6);
-    transform: scale(1);
-  }
+.card {
+  position: relative;
+  width: 280px;
+  padding: 1.2rem;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transform-style: preserve-3d;
+  transform: perspective(800px) translateY(0px);
+
+  transition: transform 0.35s cubic-bezier(.2,.8,.2,1),
+              box-shadow 0.35s ease;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  animation: floatCard 5s ease-in-out infinite;
+}
+
+/* ===== glow 光暈層 ===== */
+.card-glow {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 80, 0, 0.35),
+    transparent 60%
+  );
+
+  opacity: 0;
+  filter: blur(20px);
+  transition: opacity 0.4s ease;
+}
+
+/* ===== 內容層 ===== */
+.card-content {
+  position: relative;
+  z-index: 2;
+  transform: translateZ(20px);
+}
+
+/* ===== hover 3D效果 ===== */
+.card:hover {
+  transform: perspective(800px)
+             rotateX(6deg)
+             rotateY(-6deg)
+             scale(1.05);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.15),
+    0 0 25px rgba(255, 80, 0, 0.25);
+}
+
+/* ===== glow 出現 ===== */
+.card:hover .card-glow {
+  opacity: 1;
+}
+
+/* ===== 標題樣式 ===== */
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #2a5d34;
+}
+
+.card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ===== 浮動動畫 ===== */
+@keyframes floatCard {
+  0%   { transform: perspective(800px) translateY(0px); }
+  50%  { transform: perspective(800px) translateY(-6px); }
+  100% { transform: perspective(800px) translateY(0px); }
+}
+
+/* ===== 光掃過效果 ===== */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  transform: skewX(-20deg);
+}
+
+.card:hover::before {
+  animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+  0% { left: -150%; }
+  100% { left: 150%; }
 }
 
 /* hover 或 active 時啟用呼吸燈 */
