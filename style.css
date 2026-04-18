@@ -25,21 +25,12 @@ body {
   background-position: center;
 }
 
-.hero .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  background: rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  border-radius: 1rem;
-  text-align: center;
-  color: #fff;
-}
-
-.hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-.hero p { font-size: 1.2rem; }
+.hero .overlay { 
+  background: rgba(0, 0, 0, 0.2); 
+  padding: 2rem; 
+  border-radius: 1rem; 
+  text-align: center; 
+  color: #fff; }
 
 /* 主容器 */
 .main-container {
@@ -318,18 +309,12 @@ body {
   background-position: center;
 }
 
-.hero .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  background: rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  border-radius: 1rem;
-  text-align: center;
-  color: #fff;
-}
+.hero .overlay { 
+  background: rgba(0, 0, 0, 0.2); 
+  padding: 2rem; 
+  border-radius: 1rem; 
+  text-align: center; 
+  color: #fff; }
 
 .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
 .hero p { font-size: 1.2rem; }
