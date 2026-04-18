@@ -1,9 +1,67 @@
 /* 整體配色 */
+/* ===== 全域設定 ===== */
+:root {
+  --main-bg: #fdf6f0;
+  --main-text: #2a5d34;
+  --accent: #6dbf73;
+  --accent-dark: #4a9d57;
+  --card-bg: #ffffff;
+  --shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #fdf6f0;
-  color: #2a5d34;
+  background: linear-gradient(180deg, #fdf6f0 0%, #f7efe7 100%);
+  color: var(--main-text);
   font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+/* ===== 基本排版 ===== */
+h1, h2, h3, h4 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+/* ===== 連結樣式 ===== */
+a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* ===== 容器 ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== 卡片樣式 ===== */
+.card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
 }
 
 /* 頁首大圖 */
