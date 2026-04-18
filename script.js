@@ -4,8 +4,7 @@ const placeMap = {
   "逢甲常停的地方": "https://maps.app.goo.gl/fc1zstKVmqHa2k9P8",
   "大慶 30停車場": "https://maps.app.goo.gl/VL1FN7tTRX118fqm8",
   "大遠百停車場":"https://maps.app.goo.gl/4PWzGXKi4DA3868o7",
-  "上班停車": "https://maps.app.goo.gl/UmGX9XsFhTDaNfx57",
-  "下班停車": "https://maps.app.goo.gl/Mh1zR6YkECsAWPzY7",
+  "上班停車": "https://maps.app.goo.gl/2zAGdxmDEULD6Ziy7",
   "逢甲租屋處": "https://maps.app.goo.gl/zCEvqw6UBaPNEmdy7",
   "旱溪夜市停車":"https://maps.app.goo.gl/mCbovzJzY62h9aRy7",
   "平祿壽司-松竹店":"https://maps.app.goo.gl/QUKnW17M1kXp211G6",
@@ -16,7 +15,7 @@ const placeMap = {
   "豐原太平洋百貨":"https://maps.app.goo.gl/PgCybHoKBzEFeZzo6",
   "公司":"https://maps.app.goo.gl/ABCDEFG1234567",
   "家":"https://maps.app.goo.gl/H1234567XYZ"
-  "石頭 鹽酥雞":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7"
+  "石頭 鹽酥雞":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
 };
 
 const input = document.getElementById("location");
