@@ -15,6 +15,7 @@ const placeMap = {
   "豐原太平洋百貨":"https://maps.app.goo.gl/PgCybHoKBzEFeZzo6",
   "公司":"https://maps.app.goo.gl/ABCDEFG1234567",
   "石頭 鹽酥雞":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
+  "旱溪夜市":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
 };
 
 const input = document.getElementById("location");
