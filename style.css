@@ -2,16 +2,18 @@
 body {
   background-color: #fdf6f0;
   color: #2a5d34;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
 }
 
 /* 頁首大圖 */
 .hero {
   position: relative;
+  background-color: #ccc;
   background-image: url("https://images3.kingautos.net/2017/09/14/3OUN5eEQcb9YpGW.jpg");
   background-size: cover;
   background-position: center;
+  min-height: 300px;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -19,15 +21,24 @@ body {
 }
 
 .hero .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
   color: #fff;
 }
 
-.hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-.hero p { font-size: 1.2rem; }
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
 
 /* 主容器 */
 .main-container {
