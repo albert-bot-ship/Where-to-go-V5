@@ -16,6 +16,7 @@ const placeMap = {
   "公司":"https://maps.app.goo.gl/1aULruchPnF9ka6cA",
   "石頭 鹽酥雞":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
   "旱溪夜市":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
+  "家樂福 豐原":"https://maps.app.goo.gl/BEaqNKyjCzyEFr5C8",
 };
 
 const input = document.getElementById("location");
