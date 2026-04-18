@@ -18,7 +18,19 @@ body {
   justify-content: center;
 }
 
+.hero {
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   background: rgba(0, 0, 0, 0.2);
   padding: 2rem;
   border-radius: 1rem;
@@ -299,7 +311,19 @@ body {
   justify-content: center;
 }
 
+.hero {
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   background: rgba(0, 0, 0, 0.2);
   padding: 2rem;
   border-radius: 1rem;
