@@ -13,7 +13,7 @@ const placeMap = {
   "中油-青海":"https://maps.app.goo.gl/JLh6gGwyE5z1W44u7",
   "阿蘭碗粿":"https://maps.app.goo.gl/kEim8aHX6ZdYj4zR7",
   "豐原太平洋百貨":"https://maps.app.goo.gl/PgCybHoKBzEFeZzo6",
-  "公司":"https://maps.app.goo.gl/ABCDEFG1234567",
+  "公司":"https://maps.app.goo.gl/JED4GAcH6qf1EXmK9",
   "石頭 鹽酥雞":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
   "旱溪夜市":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
 };
