@@ -1,7 +1,7 @@
 /* 整體配色 */
 body {
   background-color: #fdf6f0;
-  color: #2a5d34;
+  color: #00117C;
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
 }
@@ -64,8 +64,9 @@ body {
   padding: 0.8rem;
   width: 100%;
   font-size: 1.1rem;
-  border: 2px solid #2a5d34;
+  border: 2px solid #00117C;
   border-radius: 0.5rem;
+0
 }
 
 .search-wrapper {
@@ -119,7 +120,7 @@ ul#suggestions li:hover {
 
 .feature-card {
   background-color: #fff;
-  border: 2px solid #2a5d34;
+  border: 2px solid #00117C;
   border-radius: 0.7rem;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -150,7 +151,7 @@ ul#suggestions li:hover {
 
 /* footer */
 footer {
-  background-color: #2a5d34;
+  background-color: #00117C;
   color: #fdf6f0;
   text-align: center;
   padding: 1rem;
@@ -219,7 +220,7 @@ footer .social img:hover {
 
 /* 側欄分類 active */
 .sidebar li.active {
-  background-color: #2a5d34;
+  background-color: #00117C;
   color: #fff;
   font-weight: bold;
   box-shadow: 0 0 10px rgba(0, 200, 100, 0.7);
