@@ -19,8 +19,7 @@ body {
 }
 
 .hero .overlay {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.2);
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
@@ -301,8 +300,7 @@ body {
 }
 
 .hero .overlay {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.25);
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
