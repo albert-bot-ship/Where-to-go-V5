@@ -220,6 +220,9 @@ ul#suggestions li:hover {
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, border-color 0.3s;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card img {
@@ -233,6 +236,7 @@ ul#suggestions li:hover {
 .feature-card p {
   font-weight: bold;
   margin: 0.5rem 0;
+  text-align: center; /* 👉 文字水平置中 */
 }
 
 .feature-card:hover {
