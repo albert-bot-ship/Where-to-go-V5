@@ -14,7 +14,7 @@ const placeMap = {
   "阿蘭碗粿":"https://maps.app.goo.gl/kEim8aHX6ZdYj4zR7",
   "豐原太平洋百貨":"https://maps.app.goo.gl/PgCybHoKBzEFeZzo6",
   "石頭 鹽酥雞":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
-  "旱溪夜市":"https://maps.app.goo.gl/XWqoc2FVwhxQg6gM7",
+  "旱溪夜市":"https://maps.app.goo.gl/xPsfJJuvsyLCJJDo7?g_st=ic",
   "家樂福 豐原":"https://maps.app.goo.gl/BEaqNKyjCzyEFr5C8",
   "豐原大車河站3":"https://maps.app.goo.gl/Z1n5XBa3WkboqopZA",
   "蔚藍海T2咖啡車":"https://maps.app.goo.gl/YiySbYtW6eAhRdhE6",
